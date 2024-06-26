@@ -20,6 +20,15 @@
 #FFFFFF
 */
 
+:root {
+    --bordo: #660708;
+    --crema: #F5F3F4;
+    --rojosuave: #A4161A;
+    --negro: #0B090A;
+    --negroclaro: #161A1D;
+    --gris: #B1A7A6;
+}
+
 
 header {
     background-color:#F5F3F4 ;
@@ -58,14 +67,11 @@ nav ul li a:hover {
     text-underline-offset: 10px;
 }
 main {
-    background-color: #161A1D;
+    background-color: var(--negro);
 }
 
-h1 {
-    font-weight: 600;
-}
 #home {
-    height: 100vh;
+    height: 93vh;
     color: #fff;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../img/home.jpg');
     background-position: 0% 30%;
@@ -77,6 +83,80 @@ h1 {
 #verProductos {
     color: #F5F3F4;
     text-decoration: none;
-    border: 2px solid #F5F3F4;
-    padding: 15px;
+    border: 3px solid var(--crema);
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#verProductos:hover {
+    border: 3px solid var(--rojosuave);
+    transition: all .3s ;
+    transform: scale(1.03);
+}
+
+#info {
+    height: 100%;
+    color: #FFFFFF;
+}
+
+#info h2 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+
+.articleHome {
+    height: 600px;
+}
+.articleHome img {
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+}
+.articleHome div {
+    height: 100%;
+}
+
+
+footer {
+    height: 200px;
+    background-color: var(--negroclaro);
+}
+
+footer>div {
+    height: 100%;
+}
+
+footer li {
+    list-style: none;
+
+}
+footer a{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: var(--crema)
+
+}
+
+
+#divRedes a{
+    display: inline-block;
+    border: 3px solid var(--crema);
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    background-color: var(--negro);
+}
+
+#divRedes a img{
+    height: 100%;
+    width: 100%;
+    filter: invert(100%);
+}
+
+
+#divRedes a:hover {
+    border: 3px solid var(--bordo);
+    transition: all .5s ;
 }
