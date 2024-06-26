@@ -108,6 +108,7 @@ main {
 
 .articleHome {
     height: 600px;
+    margin: 150px 0px;
 }
 .articleHome img {
     width: 600px;
@@ -160,3 +161,4 @@ footer a{
     border: 3px solid var(--bordo);
     transition: all .5s ;
 }
+
