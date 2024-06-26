@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    scrollbar-color: #F5F3F4 #161A1D;
+}
+
+
+header {
+    background-color:#F5F3F4 ;
+    height: 100px;
+}
+header figure {
+    margin: 0;
+    padding: 0;
+}
+header figure img {
+    height: 70px;
+    width: 70px;
+}
+nav {
+    padding: 20px;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #161A1D;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #0B090A;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+main {
+    background-color: #161A1D;
+}
+
+h1 {
+    font-weight: 600;
+}
+#home {
+    height: 100vh;
+    color: #fff;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../img/home.jpg');
+    background-position: 0% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#verProductos {
+    color: #F5F3F4;
+    text-decoration: none;
+    border: 2px solid #F5F3F4;
+    padding: 15px;
+}
