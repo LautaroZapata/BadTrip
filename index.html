@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="row flex-md-nowrap justify-content-md-around align-items-md-center m-0">
-        <figure class="col-md-4 text-center my-5">
-            <a href="index.html"><img src="img/logo.png" alt="Logo BadTrip" class="img-fluid"></a>
+    <header class="row flex-md-nowrap justify-content-md-around align-items-md-center m-0" id="inicio">
+        <figure class="col-md-4 my-5 col row headerFigure m-auto">
+            <a href="index.html" class="col-6 text-start"><img src="img/logo.png" alt="Logo BadTrip" class="img-fluid"></a>
+            <a class="col-6 text-end" id="hamburgerButton"><img src="img/hamburger-svgrepo-com.svg" alt="Hamburger Menu" id="hamburgerMenu" ></a>
+            
         </figure>
-        <nav class="col-md-6">
+        <nav class="col-md-6" id="nav">
             <ul class="row row-cols-md-4 text-center">
                 <li class="my-2 my-md-0"><a href="">Inicio</a></li>
                 <li class="my-2 my-md-0"><a href="">Productos</a></li>
@@ -26,12 +28,13 @@
             </ul>
         </nav>
     </header>
-    <main class="container-fluid m-0 p-0">
-        <section id="home" class="d-flex justify-content-center align-items-center text-center">
+    <main class="container-fluid m-0 px-0" >
+        <section id="home" class="d-flex justify-content-center align-items-center text-center img-fluid">
             <a href="" id="verProductos">Ver Productos</a>
         </section>
+
         <section id="info" class="p-0 m-0 container m-auto">
-            <article class="row w-100 p-0 align-items-center articleHome" >
+            <article class="row w-100 p-0 align-items-center articleHome " >
                 <figure class="col-md-6 text-center">
                     <img src="img/11.png"  class="img-fluid" alt="Vans KNU">
                 </figure>
@@ -45,13 +48,13 @@
                 </div>
             </article>
             <article class="row w-100 p-0 align-items-center articleHome" >
-                <div class="col-md-6">
+                <div class="col-md-6 divStock">
                     <h2 class="my-5">STOCK</h2>
                     <p>Se dispone de una cantidad fija de productos listos para su venta inmediata.</p>
                     <p>Esto significa que los artículos se encuentran en el inventario de la tienda y están listos para ser entregados a los clientes tras la compra.</p>
                     <p>Adquirir productos en stock le permite al cliente una compra más ágil.</p>
                 </div>
-                <figure class="col-md-6 text-center">
+                <figure class="col-md-6 text-center figureStock">
                     <img src="img/DSC04240.jpg"  class="img-fluid" alt="Remera Stüssy  ">
                 </figure>
             </article>
@@ -59,7 +62,7 @@
                 <figure class="col-md-6 text-center">
                     <img src="img/s-l1600.jpg" class="img-fluid" alt="Puffer The North Face">
                 </figure>
-                <div class="col-md-6">
+                <div class="col-md-6 ">
                     <h2 class="my-5">DEVOLUCIONES Y REEMBOLSOS</h2>
                     <p>Se dispone de una cantidad fija de productos listos para su venta inmediata.</p>
                     <p>Esto significa que los artículos se encuentran en el inventario de la tienda y están listos para ser entregados a los clientes tras la compra.</p>
@@ -70,13 +73,13 @@
     </main>
     <footer class="container-fluid align-items-center">
         <div class="container col row m-auto align-items-center">
-            <ul class="col-md-6">
-                <li class="my-2"><a href="" >Inicio</a></li>
+            <ul class="col-md-6 col-6">
+                <li class="my-2"><a href="#inicio" >Inicio</a></li>
                 <li class="my-2"><a href="" >Productos</a></li>
                 <li class="my-2"><a href="" >Stock</a></li>
                 <li class="my-2"><a href="" >Contacto</a></li>
             </ul>
-            <div class="col-md-6 text-end" id="divRedes">
+            <div class="col-md-6 text-end col-6" id="divRedes">
                 <a href="https://www.instagram.com/badtripuy" target="_blank" class="mx-3"><img src="img/instagram-svgrepo-com.svg" alt="Logo Instagram"></a>
                 <a href="" class="mx-3"><img src="img/tiktok-svgrepo-com.svg" alt="Logo TikTok"></a>
             </div>
